@@ -55,8 +55,12 @@ public class FtcOpModeRegister implements OpModeRegister {
      * If two or more op modes are registered with the same name, the app will display an error.
      */
 
-    manager.register("NullOp", NullOp.class);
+      manager.register("NullOp", NullOp.class);
+      manager.register("Forwards", Autothing.class);
+      manager.register("TeleOp", Comp.class);
+      manager.register("Roomba", Roomba.class);
+      manager.register("Tank", VanillaTank.class);
 
-    manager.register("TeleOp", Comp.class);
+
   }
 }

@@ -3,73 +3,47 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 /**
- * Created by ethan on 11/30/15
+ * Created by ethan on 2/4/15
  * tweaked by ak man
  */
 
 // knockers, string, tape (measure)
 
-public class Comp extends OpMode {
-
-    Servo leftKnock;                                          //Knockers
-    Servo rightKnock;
-
-    DcMotor string;                                           //things
-    DcMotor tape;//measure
+public class VanillaTank extends OpMode {
 
     DcMotor rightDrive;                                       //drive
     DcMotor leftDrive;
     Double creep;
 
+
 //  Double turnPower;                                         //arcade drive
 //  Double forwardPower;
 
     public void init() {
-        leftKnock = hardwareMap.servo.get("leftKnock");
-        rightKnock = hardwareMap.servo.get("rightKnock");
-        string = hardwareMap.dcMotor.get("string");
-        tape = hardwareMap.dcMotor.get("tape");
         leftDrive = hardwareMap.dcMotor.get("leftDrive");
         rightDrive = hardwareMap.dcMotor.get("rightDrive");
         leftDrive.setDirection(DcMotor.Direction.REVERSE);    // sets leftDrive the same direction for right
         rightDrive.setDirection(DcMotor.Direction.FORWARD);
-        creep = 1.0;
-
+        creep = 0.5;
     }
 
 
     public void loop() {
-        if (gamepad1.left_bumper) {                           //knocking things
-            leftKnock.setPosition(0.0);
-        }
-        else if (gamepad1.left_trigger >= 0.25) {
-            leftKnock.setPosition(0.5);
-        }
-
-        if (gamepad1.right_bumper) {                          //knocking things
-            rightKnock.setPosition(0.5);
-        }
-        else if (gamepad1.right_trigger >= 0.75) {
-            rightKnock.setPosition(1.0);
-        }
-
-        tape.setPower(-gamepad2.left_stick_y);
-        string.setPower(gamepad2.right_stick_y);                //climby stuff
 
         if (gamepad1.right_stick_button) {                    //creep left
-            if (creep == 1.0) {
-                creep = 0.25;
+            if (creep == 0.5) {
+                creep = 0.175;
             }
             else {
-                creep = 1.0;
+                creep = 0.5;
             }
         }
         if (gamepad1.left_stick_button) {                     //creep right
-            if (creep == 1.0) {
-                creep = 0.5;
+            if (creep == 0.5) {
+                creep = 0.25;
             }
             else {
-                creep = 1.0;
+                creep = 0.5;
             }
         }
         /*
@@ -86,7 +60,7 @@ public class Comp extends OpMode {
 
         */
         leftDrive.setPower(gamepad1.left_stick_y * creep);    //tank drive
-	    rightDrive.setPower(gamepad1.right_stick_y * creep);
+        rightDrive.setPower(gamepad1.right_stick_y * creep);
 
         //
     }
