@@ -9,6 +9,7 @@ Tank drive
 L3/R3 for creep
 
 Pad 2:
-
 Left stick y: tape measure
 Right stick y: string for lifting it
+
+exit 0
