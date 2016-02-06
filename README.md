@@ -1,4 +1,4 @@
-# 10147 code
+# 2015-16 FTC 10147
 Shrine of the polythiestic water polo players of the Whale Goddess and Pranav.
 
 Robot controls
