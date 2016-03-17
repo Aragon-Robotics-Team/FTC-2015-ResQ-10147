@@ -14,7 +14,7 @@ public class Comp extends OpMode {
     Servo leftKnock;                                          //Knockers
     Servo rightKnock;
 
-    DcMotor string;                                           //things
+//    DcMotor string;                                           //things
     DcMotor tape;//measure
 
     DcMotor rightDrive;                                       //drive
@@ -27,7 +27,7 @@ public class Comp extends OpMode {
     public void init() {
         leftKnock = hardwareMap.servo.get("leftKnock");
         rightKnock = hardwareMap.servo.get("rightKnock");
-        string = hardwareMap.dcMotor.get("string");
+//        string = hardwareMap.dcMotor.get("string");
         tape = hardwareMap.dcMotor.get("tape");
         leftDrive = hardwareMap.dcMotor.get("leftDrive");
         rightDrive = hardwareMap.dcMotor.get("rightDrive");
@@ -40,21 +40,21 @@ public class Comp extends OpMode {
 
     public void loop() {
         if (gamepad1.left_bumper) {                           //knocking things
-            leftKnock.setPosition(0.0);
+            leftKnock.setPosition(1.0);
         }
-        else if (gamepad1.left_trigger >= 0.25) {
+        else if (gamepad1.left_trigger >= 0.5) {
             leftKnock.setPosition(0.5);
         }
 
         if (gamepad1.right_bumper) {                          //knocking things
-            rightKnock.setPosition(0.5);
+            rightKnock.setPosition(0.0);
         }
-        else if (gamepad1.right_trigger >= 0.75) {
-            rightKnock.setPosition(1.0);
+        else if (gamepad1.right_trigger >= 0.5) {
+            rightKnock.setPosition(0.5);
         }
 
         tape.setPower(-gamepad2.left_stick_y);
-        string.setPower(gamepad2.right_stick_y);                //climby stuff
+//        string.setPower(gamepad2.right_stick_y);                //climby stuff
 
         if (gamepad1.right_stick_button) {                    //creep left
             if (creep == 1.0) {
@@ -66,7 +66,7 @@ public class Comp extends OpMode {
         }
         if (gamepad1.left_stick_button) {                     //creep right
             if (creep == 1.0) {
-                creep = 0.5;
+                creep = 0.25;
             }
             else {
                 creep = 1.0;

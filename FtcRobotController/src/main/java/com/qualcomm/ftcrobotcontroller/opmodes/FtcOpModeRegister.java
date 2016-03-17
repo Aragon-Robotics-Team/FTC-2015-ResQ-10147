@@ -56,7 +56,8 @@ public class FtcOpModeRegister implements OpModeRegister {
      */
 
       manager.register("NullOp", NullOp.class);
-      manager.register("Forwards", Autothing.class);
+      manager.register("RedAuto", Autothing.class);
+      manager.register("BlueAuto", BlueAuto.class);
       manager.register("TeleOp", Comp.class);
       manager.register("Roomba", Roomba.class);
       manager.register("Tank", VanillaTank.class);

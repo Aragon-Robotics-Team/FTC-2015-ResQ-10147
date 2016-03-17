@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/exploded-aar/Hardware-release/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="55ecd0b0517650a2cffd06137a40de8af3bbbde3">
-        <dex dex="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/pre-dexed/debug/classes-996951ddb8773509fca29137b01637f4e7f76de9.jar" />
-    </item>
-    <item
-        jar="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/exploded-aar/RobotCore-release/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2ec6f06847bccfe30fb8f8f75ce888721e4fd275">
-        <dex dex="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/pre-dexed/debug/classes-7ef5b53e600332442e64014c622653a80551a67c.jar" />
-    </item>
-    <item
-        jar="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/exploded-aar/Analytics-release/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="23c74caa2b901107adc4d0aec343c5b8e8be86fb">
-        <dex dex="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/pre-dexed/debug/classes-941e171aefbbd14eec53c13f980db0a2a4ccdd95.jar" />
-    </item>
-    <item
-        jar="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/exploded-aar/WirelessP2p-release/jars/classes.jar"
+        jar="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/exploded-aar/WirelessP2p-release/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="ebf8372b5bc9dc9f596ed438df36481099d51c41">
-        <dex dex="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/pre-dexed/debug/classes-b0381e53d4cdd8a713328b0e86a3b5fd364f60f0.jar" />
+        <dex dex="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/pre-dexed/debug/classes-ef46dca9d675d13bf023c14806daead07d95f816.jar" />
     </item>
     <item
-        jar="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/exploded-aar/ModernRobotics-release/jars/classes.jar"
+        jar="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/exploded-aar/Analytics-release/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="23c74caa2b901107adc4d0aec343c5b8e8be86fb">
+        <dex dex="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/pre-dexed/debug/classes-085de2a0e4c09f8a347d1890bb8d516ba4eaa237.jar" />
+    </item>
+    <item
+        jar="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/exploded-aar/ModernRobotics-release/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="ad4adcdf8eb6ff2b3b4fe9f1d676f099db621d60">
-        <dex dex="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/pre-dexed/debug/classes-3abb0301bb7dafc3b67deddcaa5cfffdb1014a08.jar" />
+        <dex dex="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/pre-dexed/debug/classes-624e118f15695e1f6dd28e2cb1f83d020a4bc0c4.jar" />
     </item>
     <item
-        jar="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/exploded-aar/FtcCommon-release/jars/classes.jar"
+        jar="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/exploded-aar/FtcCommon-release/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="6da7d9bc8c9a82321450b6b4273d1746b6cade21">
-        <dex dex="/home/member/Downloads/ftc_app-master/FtcRobotController/build/intermediates/pre-dexed/debug/classes-36fdb1fe765cb2182d265aef1b5151e0a30a41ba.jar" />
+        <dex dex="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/pre-dexed/debug/classes-f3a867970536bf0dddfd4d9f7e6ee732a578ce8b.jar" />
+    </item>
+    <item
+        jar="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/exploded-aar/RobotCore-release/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2ec6f06847bccfe30fb8f8f75ce888721e4fd275">
+        <dex dex="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/pre-dexed/debug/classes-31ad82f243ac58f9b1368b70872a3f5f2d79673b.jar" />
+    </item>
+    <item
+        jar="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/exploded-aar/Hardware-release/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="55ecd0b0517650a2cffd06137a40de8af3bbbde3">
+        <dex dex="/home/member/Documents/FTC-2015-ResQ-10147/FtcRobotController/build/intermediates/pre-dexed/debug/classes-b4fdd13acabbf46e7215f05c4a41b4775cac3641.jar" />
     </item>
 
 </items>
